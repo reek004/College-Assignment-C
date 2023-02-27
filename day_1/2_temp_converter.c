@@ -1,13 +1,13 @@
-// celsius to fahrenheit converter
+
 #include <stdio.h>
 
 int main()
 {
-    float celsius;
-    printf("Enter the temperature in farenheit \n");
-    scanf("%f", &celsius);
+    float fahrenheit;
+    printf("Enter the temperature in fahrenheit \n");
+    scanf("%f", &fahrenheit);
 
-    printf("The temperature in celcius scale will be %.02f ", (celsius - 32) * 5 / 9);
+    printf("The temperature in celcius scale will be %.02f ", (fahrenheit - 32) * 5 / 9);
 
     return 0;
 }
