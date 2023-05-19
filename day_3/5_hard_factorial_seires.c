@@ -6,11 +6,12 @@ int main()
     float sum = 0;
     printf("Enter the number of terms in the series: ");
     scanf("%d", &n);
-
-    for (i = 1; i <= n; i += 2)
-    {        // the denominator increases by two
+    int var =1 ; 
+    for (i = 1; i <= n; i++)
+    {       
+        // the denominator increases by two
         c++; // counter counts the loop each time it runs
-        for (j = 1; j <= i; j++)
+        for (j = 1; j <= var; j++)
         { // loop for getting the factorial value
             f = f * j;
         }
@@ -22,7 +23,8 @@ int main()
         {
             sum = sum - (1.0 / f); // if the is odd that means it is the odd term which is negative
         }
-        f = 1; // value of f is again changed to 1 so that the next
+        f = 1;// value of f is again changed to 1 so that the next
+        var+=2; 
     }
     printf("The sum of the series is %f", sum);
 
