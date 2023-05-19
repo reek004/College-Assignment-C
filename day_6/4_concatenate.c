@@ -21,7 +21,7 @@ int main() {
   s1[length] = '\0';
 
   printf("After concatenation: ");
-  puts(s1);
+  printf("%s",s1);
 
   return 0;
 }

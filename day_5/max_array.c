@@ -12,7 +12,7 @@ int main() {
     }
 
    
-    int max_value = array[0][0];
+    int max_value = 1;
 
     
     for (int i = 0; i < 5; i++) {
