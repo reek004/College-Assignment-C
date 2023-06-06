@@ -1,16 +1,30 @@
 #include<stdio.h> 
+#include<conio.h>
  
-int main(){
-     int n,r=0,lstdigit;
+void main(){
+     int n;
      printf("Enter the integer ");
      scanf("%d",&n);
+     isPalindrome(n);
 
+}
+int isPalindrome(int x){
+    int lstdgt;
+    int r=0;
+    int n=x;
+    printf("%d",n);
      while(n!=0){
-           lstdigit=n%10;
-           r=(r*10)+lstdigit;
+           lstdgt=n%10;
+           r=(r*10)+lstdgt;
            n /= 10;
      }
-     printf("%d",r);
 
-    return 0;
+     if(r==x){
+         printf("True");
+     }
+     else {
+      printf("False");
+      }
+       
+
 }
